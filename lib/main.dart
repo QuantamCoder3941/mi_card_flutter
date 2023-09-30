@@ -6,6 +6,8 @@ void main() {
   );
 }
 
+// this is the practice part realted to Columns and rows
+
 // class MyApp extends StatelessWidget {
 //   const MyApp({Key? key}) : super(key: key);
 
@@ -100,6 +102,23 @@ class MyApp extends StatelessWidget {
                 radius: 50.0,
                 backgroundImage: AssetImage("Images/bilal.jpg"),
               ),
+              Text(
+                "bilal baig",
+                style: TextStyle(
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontFamily: 'Pacifico'),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                    fontFamily: 'Source Sans 3',
+                    color: Colors.teal.shade100,
+                    fontSize: 20.0,
+                    letterSpacing: 2.5,
+                    fontWeight: FontWeight.bold),
+              )
             ],
           ),
         ),

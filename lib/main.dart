@@ -100,7 +100,8 @@ class MyApp extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage("Images/bilal.jpg"),
+                backgroundImage: NetworkImage(
+                    "https://media.licdn.com/dms/image/D4D03AQE27cLNUMGkjA/profile-displayphoto-shrink_200_200/0/1676633472129?e=1701302400&v=beta&t=1np8bitav9kJh6-XNVZBDatJECJidYIzC2KOdIgGgaQ"),
               ),
               Text(
                 "bilal baig",
@@ -118,6 +119,25 @@ class MyApp extends StatelessWidget {
                     fontSize: 20.0,
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    Text(
+                      "+92 316 1445789",
+                      style: TextStyle(
+                        fontFamily: 'Sourec Sans 3',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           ),

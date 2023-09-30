@@ -97,6 +97,7 @@ class MyApp extends StatelessWidget {
         // ),
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -120,25 +121,76 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold),
               ),
-              Container(
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+
+              // we can wrap a widget with padding to give that widget padding if does'nt have
+              // Card(
+              //   color: Colors.white,
+              //   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              //   child: Padding(
+              //     padding: EdgeInsets.all(25.0),
+              //     child: Row(
+              //       children: [
+              //         Icon(
+              //           Icons.phone,
+              //           color: Colors.teal,
+              //         ),
+              //         SizedBox(
+              //           width: 10.0,
+              //         ),
+              //         Text(
+              //           "+92 316 1445789",
+              //           style: TextStyle(
+              //             fontFamily: 'Sourec Sans 3',
+              //             fontSize: 20.0,
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+
+              // we used listtile to automatically arrange the elements in the card
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "+92 316 1445789",
+                    style: TextStyle(
+                      fontFamily: 'Sourec Sans 3',
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      "+92 316 1445789",
-                      style: TextStyle(
-                        fontFamily: 'Sourec Sans 3',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              )
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    "bilalqamar229@gmail.com",
+                    style: TextStyle(
+                      fontFamily: 'Sourec Sans 3',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
